@@ -9,6 +9,8 @@
 ![Quick Eats Demo0 Screenshot](screenshot/ss0.png) 
 ![Quick Eats Demo1 Screenshot](screenshot/ss1.png)
 
+---
+
 ## 🚀 Features
 
 - 🖥️ Fully responsive layout (mobile, tablet, desktop)
@@ -17,4 +19,21 @@
 - 🌐 Built with HTML5 and CSS3 only
 - 🔥 Interactive buttons and hover effects
 
+---
+
 ## 📁 Project Structure
+
+- quick-eats/
+- ├── index.html
+- ├── style.css
+- └── images/ Store your image assets here
+
+---
+
+## 📦 Technologies Used
+
+- HTML5
+- CSS3
+
+## 📄 License
+This project is open source and available under the MIT License.
