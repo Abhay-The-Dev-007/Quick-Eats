@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+/* navigation bar */
+
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background-color: hsl(39, 100%, 90%);
+}
+
+#ham{
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.4s ease;
+}
+#ham:hover{
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    transform: scale(1.1);
+}
+#ham:active{
+    background-color: hsl(0, 0%, 30%);
+}
+
+#home{
+    cursor: pointer;
+}
+#home button{
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    transition : transform 0.4s ease;
+}
+#home button:hover{
+    transform: scale(1.1);
+}
+
+.a{
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transfer 0.4s ease;
+}
+.a:hover{
+    transform: scale(1.1);
+}
+.a:active{
+    background-color: hsl(0, 0%, 90%);
+}
+
+#signup{
+    background-color: black;
+    color: white;
+}
+#signup:active{
+    background-color: hsl(0, 0%, 30%);
+}
+
+
+
+/* Home image / Section 1 */
+
+#homeimg{
+    height: 100vh;
+    background: url('images/burger.png') no-repeat center center/cover;
+    display: flex;
+    margin-top: 60px;
+}
+
+
+#address{
+    padding: 30px;
+    padding-top: 300px;
+}
+
+#add1{
+    font-size: 3rem;
+    padding-bottom: 20px;
+    font-weight: bold ;
+    cursor:default;
+}
+
+#add2{
+    display:flex;
+    gap: 10px;
+
+}
+#typeAdd{
+    width: 100%;
+    height: 43px;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#s1{
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    height: 43px;
+    width: 100px;
+    cursor: pointer;
+}
+#s1:active{
+    background-color: hsl(0, 0%, 30%);
+}
+
+
+/*  Section 2 */
+
+#sec2{
+    padding: 50px;
+    display: inline;
+    justify-content: space-between;
+}
+
+#cards{
+    padding: 5px;
+    padding-top: 30px;
+    display: flex;
+    gap: 10px;
+
+}
+
+.card{
+    width: 33.33%;
+    text-align: left;
+    font-size: 0.7rem;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*   Food Horizontal Gallery / Section 3    */
+
+#gallery-head{
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    font-size: 2rem;
+    cursor: default;
+    font-weight: bold;
+}
+
+#sec3{
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    display: flex;
+    scrollbar-width: none;
+}
+
+#gallery-container{
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+}
+
+.image-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.image-box img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.name{
+    text-align: center;
+    cursor: pointer;
+}
+
+/*  Map / Section 4  */
+#map{
+    padding: 10px;
+    padding-top: 100px;
+}
+#sec4-heading{
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+#map-container{
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#city-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+}
+.city{
+    font-weight: lighter;
+    color: hsl(0, 0%, 30%);
+}
+
+
+/*  Footer   */
+
+#footer{
+    padding: 30px;
+    text-align: center;
+}
+
+#footer-container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-logo{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#footer-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+#footer-list div{
+    text-align: left;
+}
+#footer-list ul{
+    list-style: none;
+}
+#footer-list ul li {
+    margin-bottom: 5px;
+}
+#footer-list ul li a{
+    font-weight: lighter;
+    text-decoration: none;
+    color: hsl(0, 0%, 30%);
+}
+
+#store-btns{
+    margin: 20px 0;
+}
+
+#store-btns img{
+    width: 140px;
+    margin: 5px;
+}
+
+#social-icons a{
+    font-family: 20px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+#footer-bottom{
+    margin-top: 20px;
+    font-size: 14px;
+    color: hsl(0, 0%, 40%);
+}
+
+
+#option{
+    margin: 10px;
+}
+
+#option button{
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+ 
